@@ -1,0 +1,29 @@
+public class Professor extends Funcionario {
+	
+	private static final double HORA_BASE = 160;
+	private static final double SALARIO_BASE = 425;
+	
+	private String matricula;
+	
+	
+	public Professor(String nome) {
+		super(nome);
+	}
+	
+	
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+	
+	
+	public String getMatricula() {
+		return matricula;
+	}
+	
+	
+	
+	public void calcularSalario(double horaTrabalhada) {
+		this.salario = Professor.HORA_BASE * horaTrabalhada + Professor.SALARIO_BASE; 
+	}
+	
+}
